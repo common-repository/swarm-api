@@ -1,0 +1,85 @@
+/*
+	Swarm API Template CSS
+	Plugin Name: Swarm API
+	Plugin URI: http://swarmapi.pbworks.com/WordPress-Plugin
+	Description: Plugin is used for pulling swarm data. "Swarm data" can currently be defined as tweets, links, members, and photos from a swarm. <a href="http://www.swarmforce.com/about/swarms.php" target="_blank">Read more on swarms.</a> This data can be easily accessed outside of Word Press. You can use the REST interface for the Swarm API directly. See <a href="http://swarmapi.pbworks.com" target="_blank">swarmapi.pbworks.com </a> for documentation and code samples.
+	Author: Swarmforce
+	Version: 1.0
+	Author URI: http://www.swarmforce.com
+	
+	This is a template stylesheet to style div containers that display swarm data
+*/
+
+.moduleheader{
+	color:#333333;
+	font-size:16px;
+	font-weight:500;
+	margin-bottom:15px;
+}
+.modulesubheader{
+	color:#999999; 
+	font-size:11px; 
+	margin-bottom:16px;
+}
+.dottedline{
+	border-top:dashed #ccc 1px; 
+	margin-bottom:26px;
+}
+	
+	
+#sf_tweet_view{float:left;}
+	#sf_tweet_view .tweet{position:relative; border-top:dashed #ccc 1px; overflow:hidden;padding-top:16px; padding-bottom:16px; padding-left:8px; padding-right:8px;}
+		#sf_tweet_view .tweet.wt{background-color:#f9f8f3;}
+		#sf_tweet_view .tweet .tweet_photo{-moz-border-radius:7px; -webkit-border-radius:7px; height:48px; margin-bottom:5px; float:left; width:48px; margin-right: 25px;}
+		#sf_tweet_view .tweet .tweet_msg{color:#333333;font-family:'Lucida Grande',sans-serif;font-size:13px;line-height:1.2em;}
+			#sf_tweet_view .tweet .tweet_msg .tweet_author{float:left;margin-right:6px;}
+			#sf_tweet_view .tweet .tweet_msg .tweet_karma{float:left;margin-right:6px;}
+			#sf_tweet_view .tweet .tweet_msg .tweet_text{margin-left:73px; }
+			#sf_tweet_view .tweet .tweet_msg .entry_time{display: inline;}
+	#sf_tweet_view .tweetmorefooter{float:right;font-size:12px;margin-top:20px;}
+	
+	
+#sf_photo_view{float:left;}
+	#sf_photo_view .info{text-align:left;margin:30px auto;border-top:1px dotted #221;padding-top:30px;}
+	#sf_photo_view .info p{margin-top:1.6em;}
+	#sf_photo_view .galleria{list-style:none;width:340px}
+	#sf_photo_view .galleria li:before{content:"" !important;}
+	#sf_photo_view .galleria li{display:block !important;width:80px !important;height:80px !important;overflow:hidden !important;float:left !important;margin:0 10px 10px 0 !important}
+	#sf_photo_view .galleria li a{display:none !important}
+	#sf_photo_view .galleria li div{position:absolute !important;display:none !important;top:0 !important;left:180px !important;}
+	#sf_photo_view .galleria li div img{cursor:pointer !important;}
+	#sf_photo_view .galleria li.active div img,.galleria li.active div{display:block !important;}
+	#sf_photo_view .galleria li img.thumb{cursor:pointer !important;top:auto !important;left:auto !important;display:block !important;width:auto;height:auto;}
+	#sf_photo_view .galleria li .caption{display:block !important;padding-top:.5em !important;}
+	#sf_photo_view .caption{font-style:italic;color:#887;}
+	#sf_photo_view .demo{position:relative;margin-top:2em; }
+	#sf_photo_view .gallery_demo{margin-left:2px;margin-top:-10px;}
+	#sf_photo_view .gallery_demo li{width:68px !important;height:50px !important;border:3px double #111 !important;background:#000 !important;}
+	#sf_photo_view .galleria_demo li img{margin-top:-20px !important;}
+	#sf_photo_view .gallery_demo li div{left:240px}
+	#sf_photo_view .gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif !important;}
+	#sf_photo_view #main_image{margin:0 auto 60px auto;width:$photoLimitpx;}
+	#sf_photo_view #main_image img{margin-bottom:10px;}
+	#sf_photo_view .nav{font-size:10px;margin-left:12px;padding-top:30px;clear:both;font-family: 'helvetica neue',sans-serif;letter-spacing:3px;}
+	
+#sf_link_view{float:left;}
+	#sf_link_view .link{padding-top:20px; padding-bottom:26px; padding-left:10px; padding-right:10px;position:relative; border-top:dashed #ccc 1px; overflow:hidden;  }
+	#sf_link_view .link.wt{background-color:#f9f8f3;}
+	#sf_link_view .link .linkphoto{float:left;}
+	#sf_link_view .link .linkinfo{font-size:14px; margin-left:184px; width:206px;}
+	#sf_link_view .link .linkinfo .linktitle{margin-bottom:12px;}
+	#sf_link_view .link .linkinfo .linkurl{color:#888888;font-size:11px;margin-top:10px;}
+	#sf_link_view .link .linkinfo .linkdestination{color:#888888;font-size:11px;margin-top:10px;}
+	#sf_link_view .link .linkinfo .linkstats{color:#054661;float:left;font-size:12px;margin-left:10px;margin-top:10px;}
+	#sf_link_view .link .linkinfo #urlheader{color:#444444;font-size:11px;}
+	#sf_link_view .link .linkinfo #destinationheader{color:#444444;font-size:11px;margin-top:10px;}
+	#sf_link_view .link .linkinfo #clicksheader{color:#444444;float:left;font-size:11px;margin-top:10px;}
+
+#sf_member_view{float:left;}
+	#sf_member_view .topswarmers ul li a div.mask_avatar {background:transparent url(http://api.swarmforce.com/v1.0/_images/mask_avatar_shadow.gif) no-repeat scroll 0 0 !important;height:53px !important;left:0 !important;padding:0 !important;position:absolute !important;top:0 !important;width:55px !important;}
+	#sf_member_view .mask_avatar {cursor:pointer !important;}
+	#sf_member_view .topswarmers ul li a img {padding:4px 5px !important;border:0 none !important;}
+	#sf_member_view .topswarmers ul li a {display:block !important;position:relative !important;}
+	#sf_member_view .topswarmers ul li {float:left !important;height:54px !important;margin:0 4px !important;overflow:hidden !important;width:55px !important;}
+	#sf_member_view .topswarmers ul {float:left !important;list-style-image:none !important;list-style-position:outside !important;list-style-type:none !important;margin:5px 0 !important;}
+	#sf_member_view .topswarmers {float:left;}

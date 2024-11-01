@@ -1,0 +1,46 @@
+/*
+	Swarm API Admin CSS
+	Plugin Name: Swarm API
+	Plugin URI: http://swarmapi.pbworks.com/WordPress-Plugin
+	Description: Plugin is used for pulling swarm data. "Swarm data" can currently be defined as tweets, links, members, and photos from a swarm. <a href="http://www.swarmforce.com/about/swarms.php" target="_blank">Read more on swarms.</a> This data can be easily accessed outside of Word Press. You can use the REST interface for the Swarm API directly. See <a href="http://swarmapi.pbworks.com" target="_blank">swarmapi.pbworks.com </a> for documentation and code samples.
+	Author: Swarmforce
+	Version: 1.0
+	Author URI: http://www.swarmforce.com
+	
+	This CSS is for the options page. DO NOT EDIT.
+*/
+.sf_option_sm {
+	font-size:10px;
+	margin-top:-14px;
+}
+.sf_option_sm_gray {
+	font-size:10px;
+	margin-top:-14px;
+	color:#999999;
+}
+.sf_adminfooter{
+	float:left;
+	font-size:9px;
+	margin-bottom:30px;
+	margin-left:10px;
+	margin-top:90px;
+}
+.sf_adminswarmIcons{
+}
+.sf_adminswarmIcons .sf_swarmIcon{
+	float:left;
+	margin-right:20px;
+	margin-bottom:60px;
+	cursor:pointer;
+}
+.sf_adminswarmIcons .sel{
+	border:solid #222 4px; 
+}
+.sf_adminCurrentSwarmImage{
+	float:left;
+}
+.sf_adminCurrentSwarmName{
+	float:left;
+	margin-left:20px;
+	margin-top:25px;
+}
